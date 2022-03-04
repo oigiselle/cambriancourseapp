@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var phrases: UILabel!
+    @IBOutlet weak var addMessage: UIButton!
+    @IBOutlet weak var newPhrase: UIButton!
 }
 

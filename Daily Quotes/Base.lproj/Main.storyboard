@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Daily_Quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -33,9 +32,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-direita" translatesAutoresizingMaskIntoConstraints="NO" id="E2d-aV-jog">
                                         <rect key="frame" x="199" y="247" width="81" height="49"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-Bq-RKV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-Bq-RKV">
                                         <rect key="frame" x="8" y="65" width="272" height="174"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <attributedString key="attributedText">
                                             <fragment content="It will probably get worse.">
                                                 <attributes>
@@ -53,11 +51,15 @@
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.72156862749999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Bq2-se-FbD" secondAttribute="bottom" constant="247" id="1MC-UK-Hda"/>
+                                    <constraint firstItem="Re1-Bq-RKV" firstAttribute="top" secondItem="vE5-Lb-upO" secondAttribute="top" constant="65" id="8eh-l1-ZaE"/>
                                     <constraint firstItem="E2d-aV-jog" firstAttribute="leading" secondItem="vE5-Lb-upO" secondAttribute="leading" constant="199" id="DEJ-6V-cFB"/>
                                     <constraint firstAttribute="bottom" secondItem="E2d-aV-jog" secondAttribute="bottom" constant="8" id="HNg-p6-GSk"/>
+                                    <constraint firstAttribute="bottom" secondItem="Re1-Bq-RKV" secondAttribute="bottom" constant="65" id="Z6Y-2Z-sVw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Re1-Bq-RKV" secondAttribute="trailing" constant="8" id="aVj-N8-2f4"/>
                                     <constraint firstAttribute="trailing" secondItem="E2d-aV-jog" secondAttribute="trailing" constant="8" id="b1l-el-Tll"/>
                                     <constraint firstItem="Bq2-se-FbD" firstAttribute="top" secondItem="vE5-Lb-upO" secondAttribute="top" constant="8" id="f9n-R3-Azi"/>
                                     <constraint firstItem="Bq2-se-FbD" firstAttribute="leading" secondItem="vE5-Lb-upO" secondAttribute="leading" constant="8" id="mp8-5l-hap"/>
+                                    <constraint firstItem="Re1-Bq-RKV" firstAttribute="leading" secondItem="vE5-Lb-upO" secondAttribute="leading" constant="8" id="r4D-dc-PjK"/>
                                     <constraint firstItem="E2d-aV-jog" firstAttribute="top" secondItem="vE5-Lb-upO" secondAttribute="top" constant="247" id="w2Z-K7-ukv"/>
                                     <constraint firstAttribute="trailing" secondItem="Bq2-se-FbD" secondAttribute="trailing" constant="199" id="yMt-T3-HKS"/>
                                 </constraints>
@@ -71,7 +73,7 @@
                                     <color key="baseBackgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="0.84396258499999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wordart-2" translatesAutoresizingMaskIntoConstraints="NO" id="DYR-Su-KBF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wordart-2" translatesAutoresizingMaskIntoConstraints="NO" id="DYR-Su-KBF">
                                 <rect key="frame" x="8" y="10" width="304" height="158"/>
                             </imageView>
                         </subviews>
@@ -85,6 +87,8 @@
                             <constraint firstItem="bsW-1h-xog" firstAttribute="top" secondItem="DYR-Su-KBF" secondAttribute="bottom" constant="2" id="JQM-1a-z4x"/>
                             <constraint firstItem="bsW-1h-xog" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Jul-XT-aao"/>
                             <constraint firstItem="vE5-Lb-upO" firstAttribute="top" secondItem="bsW-1h-xog" secondAttribute="bottom" constant="39" id="KlQ-i1-E3a"/>
+                            <constraint firstItem="DYR-Su-KBF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="OEs-6O-5Pr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DYR-Su-KBF" secondAttribute="trailing" constant="8" id="PBP-ti-J8s"/>
                             <constraint firstItem="iZH-90-BaZ" firstAttribute="top" secondItem="DYR-Su-KBF" secondAttribute="bottom" constant="2" id="PNh-ys-raP"/>
                             <constraint firstItem="iZH-90-BaZ" firstAttribute="top" secondItem="DYR-Su-KBF" secondAttribute="bottom" constant="2" id="PVK-xK-uO9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DYR-Su-KBF" secondAttribute="bottom" constant="400" id="WMx-bl-22F"/>
@@ -97,7 +101,13 @@
                             <constraint firstItem="iZH-90-BaZ" firstAttribute="leading" secondItem="bsW-1h-xog" secondAttribute="trailing" constant="60.5" id="zPG-0n-K7G"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addMessage" destination="iZH-90-BaZ" id="Slb-yU-q13"/>
+                        <outlet property="newPhrase" destination="bsW-1h-xog" id="dow-bR-dKZ"/>
+                        <outlet property="phrases" destination="Re1-Bq-RKV" id="niO-fr-vWG"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="26.25" y="78.16901408450704"/>
         </scene>
