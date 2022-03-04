@@ -17,16 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wordart" translatesAutoresizingMaskIntoConstraints="NO" id="DYR-Su-KBF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wordart-2" translatesAutoresizingMaskIntoConstraints="NO" id="DYR-Su-KBF">
                                 <rect key="frame" x="8" y="0.0" width="304" height="168"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsW-1h-xog">
-                                <rect key="frame" x="70" y="170" width="180" height="41"/>
-                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="New Phrase" titleAlignment="center"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vE5-Lb-upO">
                                 <rect key="frame" x="16" y="250" width="288" height="304"/>
                                 <subviews>
@@ -65,22 +58,43 @@
                                     <constraint firstAttribute="trailing" secondItem="Bq2-se-FbD" secondAttribute="trailing" constant="199" id="yMt-T3-HKS"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-90-BaZ">
+                                <rect key="frame" x="256.5" y="170" width="47.5" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="plus.square.on.square.fill" catalog="system">
+                                    <color key="baseBackgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="0.84396258499999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsW-1h-xog">
+                                <rect key="frame" x="16" y="170" width="180" height="41"/>
+                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="New Phrase" titleAlignment="center"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vE5-Lb-upO" secondAttribute="bottom" constant="14" id="1y9-mA-zmB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bsW-1h-xog" secondAttribute="trailing" constant="70" id="G3q-sH-tVy"/>
+                            <constraint firstItem="vE5-Lb-upO" firstAttribute="top" secondItem="iZH-90-BaZ" secondAttribute="bottom" constant="41" id="DnA-vQ-Ur5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DYR-Su-KBF" secondAttribute="trailing" constant="8" id="JEN-wp-vfS"/>
+                            <constraint firstItem="bsW-1h-xog" firstAttribute="top" secondItem="DYR-Su-KBF" secondAttribute="bottom" constant="2" id="JQM-1a-z4x"/>
                             <constraint firstItem="bsW-1h-xog" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Jul-XT-aao"/>
                             <constraint firstItem="vE5-Lb-upO" firstAttribute="top" secondItem="bsW-1h-xog" secondAttribute="bottom" constant="39" id="KlQ-i1-E3a"/>
+                            <constraint firstItem="iZH-90-BaZ" firstAttribute="top" secondItem="DYR-Su-KBF" secondAttribute="bottom" constant="2" id="PNh-ys-raP"/>
+                            <constraint firstItem="iZH-90-BaZ" firstAttribute="top" secondItem="DYR-Su-KBF" secondAttribute="bottom" constant="2" id="PVK-xK-uO9"/>
                             <constraint firstItem="DYR-Su-KBF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TRD-Ow-fxH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DYR-Su-KBF" secondAttribute="bottom" constant="400" id="WMx-bl-22F"/>
                             <constraint firstItem="vE5-Lb-upO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YFC-Ij-J27"/>
+                            <constraint firstItem="iZH-90-BaZ" firstAttribute="top" secondItem="DYR-Su-KBF" secondAttribute="bottom" constant="2" id="YnP-ei-K8k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vE5-Lb-upO" secondAttribute="trailing" constant="16" id="bho-bB-QpV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iZH-90-BaZ" secondAttribute="trailing" constant="16" id="dbt-hG-Fe4"/>
                             <constraint firstItem="DYR-Su-KBF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="ogv-ss-iBs"/>
-                            <constraint firstItem="bsW-1h-xog" firstAttribute="top" secondItem="DYR-Su-KBF" secondAttribute="bottom" constant="2" id="v4s-Gl-tIL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bsW-1h-xog" secondAttribute="bottom" constant="357" id="zLE-Vd-7nE"/>
+                            <constraint firstItem="iZH-90-BaZ" firstAttribute="leading" secondItem="bsW-1h-xog" secondAttribute="trailing" constant="60.5" id="zPG-0n-K7G"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -91,9 +105,13 @@
     <resources>
         <image name="aspas-direita" width="56" height="55"/>
         <image name="aspas-esquerda" width="57" height="54"/>
-        <image name="wordart" width="6598" height="4502"/>
+        <image name="plus.square.on.square.fill" catalog="system" width="128" height="113"/>
+        <image name="wordart-2" width="6646" height="3228"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
